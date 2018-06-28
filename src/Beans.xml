@@ -4,10 +4,17 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
         <bean name="helloWorld" class="com.tutorialspoint.HelloWorld">
             <property name="message" value="Hello World!"/>
+            <property name="age" value="17"/>
         </bean>
     <bean id="cStartEventHandler"
           class="com.tutorialspoint.CStartEventHandler"/>
 
     <bean id="cStopEventHandler"
           class="com.tutorialspoint.CStopEventHandler"/>
+
+    <bean id="customEventHandler"
+          class="com.tutorialspoint.CustomEventHandler"/>
+
+    <bean id="customEventPublisher"
+          class="com.tutorialspoint.CustomEventPublisher" />
 </beans>
